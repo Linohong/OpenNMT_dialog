@@ -398,3 +398,48 @@
 [2019-04-02 16:02:10,026 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
 [2019-04-02 16:02:53,345 INFO] Step 1850/10000; acc:  15.05; ppl: 131.67; xent: 4.88; lr: 0.00205; 12989/4141 tok/s;   4009 sec
 [2019-04-02 16:04:39,723 INFO] Step 1900/10000; acc:  18.39; ppl: 103.86; xent: 4.64; lr: 0.00203; 17227/4108 tok/s;   4115 sec
+[2019-04-02 16:06:26,725 INFO] Step 1950/10000; acc:  16.75; ppl: 116.45; xent: 4.76; lr: 0.00200; 14444/6071 tok/s;   4222 sec
+[2019-04-02 16:06:52,410 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:08:15,850 INFO] Step 2000/10000; acc:  14.51; ppl: 132.53; xent: 4.89; lr: 0.00198; 17035/4234 tok/s;   4332 sec
+[2019-04-02 16:10:02,682 INFO] Step 2050/10000; acc:  15.11; ppl: 121.98; xent: 4.80; lr: 0.00195; 15718/4562 tok/s;   4438 sec
+[2019-04-02 16:11:35,674 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:11:53,690 INFO] Step 2100/10000; acc:  16.68; ppl: 115.01; xent: 4.75; lr: 0.00193; 13583/5752 tok/s;   4549 sec
+[2019-04-02 16:13:38,613 INFO] Step 2150/10000; acc:  12.52; ppl: 161.32; xent: 5.08; lr: 0.00191; 12113/7381 tok/s;   4654 sec
+[2019-04-02 16:15:24,806 INFO] Step 2200/10000; acc:  16.63; ppl: 123.12; xent: 4.81; lr: 0.00188; 14451/6617 tok/s;   4761 sec
+[2019-04-02 16:16:16,336 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:17:16,827 INFO] Step 2250/10000; acc:  13.66; ppl: 135.05; xent: 4.91; lr: 0.00186; 13300/6108 tok/s;   4873 sec
+[2019-04-02 16:19:02,079 INFO] Step 2300/10000; acc:  15.36; ppl: 125.66; xent: 4.83; lr: 0.00184; 13810/6103 tok/s;   4978 sec
+[2019-04-02 16:20:47,837 INFO] Step 2350/10000; acc:  15.67; ppl: 125.74; xent: 4.83; lr: 0.00182; 12122/4734 tok/s;   5084 sec
+[2019-04-02 16:20:56,901 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:22:36,016 INFO] Step 2400/10000; acc:  18.27; ppl: 103.65; xent: 4.64; lr: 0.00180; 15261/4791 tok/s;   5192 sec
+[2019-04-02 16:22:36,643 INFO] Loading valid dataset from data/demo.valid.1.pt, number of examples: 10725
+[2019-04-02 16:22:57,182 INFO] Validation perplexity: 261.891
+[2019-04-02 16:22:57,182 INFO] Validation accuracy: 16.5949
+[2019-04-02 16:24:42,149 INFO] Step 2450/10000; acc:  14.92; ppl: 126.51; xent: 4.84; lr: 0.00179; 14318/6003 tok/s;   5318 sec
+[2019-04-02 16:25:57,034 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:26:31,486 INFO] Step 2500/10000; acc:  18.81; ppl: 90.87; xent: 4.51; lr: 0.00177; 16163/2780 tok/s;   5427 sec
+[2019-04-02 16:28:16,857 INFO] Step 2550/10000; acc:  15.66; ppl: 110.29; xent: 4.70; lr: 0.00175; 15953/4629 tok/s;   5533 sec
+[2019-04-02 16:30:01,943 INFO] Step 2600/10000; acc:  17.71; ppl: 104.90; xent: 4.65; lr: 0.00173; 15662/5733 tok/s;   5638 sec
+[2019-04-02 16:30:36,621 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:31:50,709 INFO] Step 2650/10000; acc:  18.87; ppl: 93.47; xent: 4.54; lr: 0.00172; 15537/5226 tok/s;   5746 sec
+[2019-04-02 16:33:36,045 INFO] Step 2700/10000; acc:  16.32; ppl: 123.74; xent: 4.82; lr: 0.00170; 12120/7505 tok/s;   5852 sec
+[2019-04-02 16:35:14,189 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:35:25,313 INFO] Step 2750/10000; acc:  13.62; ppl: 112.73; xent: 4.72; lr: 0.00169; 15858/4378 tok/s;   5961 sec
+[2019-04-02 16:37:10,009 INFO] Step 2800/10000; acc:  16.97; ppl: 110.06; xent: 4.70; lr: 0.00167; 14156/5327 tok/s;   6066 sec
+[2019-04-02 16:38:54,760 INFO] Step 2850/10000; acc:  15.76; ppl: 111.32; xent: 4.71; lr: 0.00166; 13863/5331 tok/s;   6170 sec
+[2019-04-02 16:39:52,688 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:40:43,583 INFO] Step 2900/10000; acc:  15.57; ppl: 105.16; xent: 4.66; lr: 0.00164; 16099/5099 tok/s;   6279 sec
+[2019-04-02 16:42:28,722 INFO] Step 2950/10000; acc:  17.12; ppl: 106.40; xent: 4.67; lr: 0.00163; 13356/4490 tok/s;   6384 sec
+[2019-04-02 16:44:13,443 INFO] Step 3000/10000; acc:  16.53; ppl: 106.77; xent: 4.67; lr: 0.00161; 14630/5667 tok/s;   6489 sec
+[2019-04-02 16:44:31,147 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:46:01,497 INFO] Step 3050/10000; acc:  18.24; ppl: 95.88; xent: 4.56; lr: 0.00160; 16166/4348 tok/s;   6597 sec
+[2019-04-02 16:47:46,310 INFO] Step 3100/10000; acc:  15.22; ppl: 107.64; xent: 4.68; lr: 0.00159; 12525/5277 tok/s;   6702 sec
+[2019-04-02 16:49:08,809 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:49:34,775 INFO] Step 3150/10000; acc:  16.54; ppl: 111.65; xent: 4.72; lr: 0.00157; 14620/6699 tok/s;   6810 sec
+[2019-04-02 16:51:17,923 INFO] Step 3200/10000; acc:  16.32; ppl: 104.19; xent: 4.65; lr: 0.00156; 14399/4647 tok/s;   6914 sec
+[2019-04-02 16:51:18,165 INFO] Loading valid dataset from data/demo.valid.1.pt, number of examples: 10725
+[2019-04-02 16:51:38,831 INFO] Validation perplexity: 256.143
+[2019-04-02 16:51:38,832 INFO] Validation accuracy: 17.0881
+[2019-04-02 16:53:22,922 INFO] Step 3250/10000; acc:  17.11; ppl: 111.52; xent: 4.71; lr: 0.00155; 13195/7484 tok/s;   7039 sec
+[2019-04-02 16:54:03,824 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:55:10,457 INFO] Step 3300/10000; acc:  14.48; ppl: 116.56; xent: 4.76; lr: 0.00154; 12245/5801 tok/s;   7146 sec
