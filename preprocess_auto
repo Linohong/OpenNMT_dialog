@@ -1,0 +1,5 @@
+#!/bin/sh
+# first argument for src length
+# second argument for tgt length 
+
+python preprocess.py -train_src data/src-train.txt -train_tgt data/tgt-train.txt -valid_src data/src-val.txt -valid_tgt data/tgt-val.txt -src_seq_length $1 -tgt_seq_length $2 -save_data data/demo

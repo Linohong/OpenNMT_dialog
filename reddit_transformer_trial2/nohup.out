@@ -1,0 +1,400 @@
+[2019-04-02 14:55:54,885 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 14:55:55,111 INFO]  * vocabulary size. source = 50002; target = 50004
+[2019-04-02 14:55:55,111 INFO] Building model...
+[2019-04-02 14:56:01,864 INFO] NMTModel(
+  (encoder): TransformerEncoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(50002, 512, padding_idx=1)
+        )
+        (pe): PositionalEncoding(
+          (dropout): Dropout(p=0.1)
+        )
+      )
+    )
+    (transformer): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (3): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (4): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (5): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+    )
+    (layer_norm): LayerNorm()
+  )
+  (decoder): TransformerDecoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(50004, 512, padding_idx=1)
+        )
+        (pe): PositionalEncoding(
+          (dropout): Dropout(p=0.1)
+        )
+      )
+    )
+    (transformer_layers): ModuleList(
+      (0): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm_1): LayerNorm()
+        (layer_norm_2): LayerNorm()
+        (drop): Dropout(p=0.1)
+      )
+      (1): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm_1): LayerNorm()
+        (layer_norm_2): LayerNorm()
+        (drop): Dropout(p=0.1)
+      )
+      (2): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm_1): LayerNorm()
+        (layer_norm_2): LayerNorm()
+        (drop): Dropout(p=0.1)
+      )
+      (3): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm_1): LayerNorm()
+        (layer_norm_2): LayerNorm()
+        (drop): Dropout(p=0.1)
+      )
+      (4): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm_1): LayerNorm()
+        (layer_norm_2): LayerNorm()
+        (drop): Dropout(p=0.1)
+      )
+      (5): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm()
+          (dropout_1): Dropout(p=0.1)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm_1): LayerNorm()
+        (layer_norm_2): LayerNorm()
+        (drop): Dropout(p=0.1)
+      )
+    )
+    (layer_norm): LayerNorm()
+  )
+  (generator): Sequential(
+    (0): Linear(in_features=512, out_features=50004, bias=True)
+    (1): LogSoftmax()
+  )
+)
+[2019-04-02 14:56:01,871 INFO] encoder: 44516352
+[2019-04-02 14:56:01,871 INFO] decoder: 76479316
+[2019-04-02 14:56:01,871 INFO] * number of parameters: 120995668
+/home/nlpgpu3/anaconda3/envs/linohong3/lib/python3.6/site-packages/torch/nn/functional.py:52: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+[2019-04-02 14:56:02,335 INFO] Start training...
+[2019-04-02 14:56:04,299 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+/home/nlpgpu3/anaconda3/envs/linohong3/lib/python3.6/site-packages/torch/nn/functional.py:52: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+[2019-04-02 14:57:46,904 INFO] Step 50/10000; acc:   7.31; ppl: 910.17; xent: 6.81; lr: 0.00020; 12163/5535 tok/s;    103 sec
+[2019-04-02 14:59:30,416 INFO] Step 100/10000; acc:  11.50; ppl: 331.80; xent: 5.80; lr: 0.00039; 12872/7667 tok/s;    206 sec
+[2019-04-02 15:00:36,104 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:01:18,101 INFO] Step 150/10000; acc:  12.79; ppl: 242.37; xent: 5.49; lr: 0.00059; 13314/6154 tok/s;    314 sec
+[2019-04-02 15:03:02,115 INFO] Step 200/10000; acc:  18.74; ppl: 154.91; xent: 5.04; lr: 0.00078; 18003/3751 tok/s;    418 sec
+[2019-04-02 15:04:49,041 INFO] Step 250/10000; acc:  17.27; ppl: 152.84; xent: 5.03; lr: 0.00098; 15504/5851 tok/s;    525 sec
+[2019-04-02 15:05:14,778 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:06:37,920 INFO] Step 300/10000; acc:  17.34; ppl: 137.64; xent: 4.92; lr: 0.00117; 15422/4693 tok/s;    634 sec
+[2019-04-02 15:08:25,203 INFO] Step 350/10000; acc:  19.40; ppl: 119.78; xent: 4.79; lr: 0.00137; 16174/4167 tok/s;    741 sec
+[2019-04-02 15:09:58,432 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:10:16,262 INFO] Step 400/10000; acc:  21.24; ppl: 98.01; xent: 4.59; lr: 0.00156; 15791/3645 tok/s;    852 sec
+[2019-04-02 15:12:02,932 INFO] Step 450/10000; acc:  19.57; ppl: 106.11; xent: 4.66; lr: 0.00176; 12149/7527 tok/s;    959 sec
+[2019-04-02 15:13:48,473 INFO] Step 500/10000; acc:  21.44; ppl: 94.90; xent: 4.55; lr: 0.00195; 13242/5038 tok/s;   1064 sec
+[2019-04-02 15:14:41,262 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:15:39,601 INFO] Step 550/10000; acc:  19.54; ppl: 93.23; xent: 4.54; lr: 0.00215; 12210/5592 tok/s;   1175 sec
+[2019-04-02 15:17:25,822 INFO] Step 600/10000; acc:  21.02; ppl: 88.51; xent: 4.48; lr: 0.00234; 14610/5556 tok/s;   1282 sec
+[2019-04-02 15:19:11,509 INFO] Step 650/10000; acc:  21.20; ppl: 87.02; xent: 4.47; lr: 0.00254; 13219/5007 tok/s;   1387 sec
+[2019-04-02 15:19:21,276 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:21:00,642 INFO] Step 700/10000; acc:  20.95; ppl: 88.09; xent: 4.48; lr: 0.00273; 11448/5639 tok/s;   1496 sec
+[2019-04-02 15:22:46,017 INFO] Step 750/10000; acc:  20.51; ppl: 90.35; xent: 4.50; lr: 0.00293; 11440/6726 tok/s;   1602 sec
+[2019-04-02 15:24:00,619 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:24:35,384 INFO] Step 800/10000; acc:  18.60; ppl: 95.25; xent: 4.56; lr: 0.00313; 15754/4350 tok/s;   1711 sec
+[2019-04-02 15:24:35,570 INFO] Loading valid dataset from data/demo.valid.1.pt, number of examples: 10725
+[2019-04-02 15:24:56,491 INFO] Validation perplexity: 237.545
+[2019-04-02 15:24:56,493 INFO] Validation accuracy: 18.7588
+[2019-04-02 15:26:41,667 INFO] Step 850/10000; acc:  18.31; ppl: 97.47; xent: 4.58; lr: 0.00303; 16046/5742 tok/s;   1837 sec
+[2019-04-02 15:28:26,879 INFO] Step 900/10000; acc:  17.31; ppl: 119.69; xent: 4.78; lr: 0.00295; 15363/6021 tok/s;   1943 sec
+[2019-04-02 15:29:01,279 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:30:14,686 INFO] Step 950/10000; acc:  19.20; ppl: 102.04; xent: 4.63; lr: 0.00287; 17352/3809 tok/s;   2050 sec
+[2019-04-02 15:32:00,095 INFO] Step 1000/10000; acc:  16.43; ppl: 140.15; xent: 4.94; lr: 0.00280; 13811/6224 tok/s;   2156 sec
+[2019-04-02 15:33:40,114 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:33:49,467 INFO] Step 1050/10000; acc:  13.92; ppl: 140.09; xent: 4.94; lr: 0.00273; 17036/3611 tok/s;   2265 sec
+[2019-04-02 15:35:34,664 INFO] Step 1100/10000; acc:  15.99; ppl: 133.68; xent: 4.90; lr: 0.00267; 12400/5007 tok/s;   2370 sec
+[2019-04-02 15:37:20,008 INFO] Step 1150/10000; acc:  16.13; ppl: 132.60; xent: 4.89; lr: 0.00261; 12117/6105 tok/s;   2476 sec
+[2019-04-02 15:38:19,351 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:39:10,231 INFO] Step 1200/10000; acc:  16.55; ppl: 118.33; xent: 4.77; lr: 0.00255; 16678/4555 tok/s;   2586 sec
+[2019-04-02 15:40:55,382 INFO] Step 1250/10000; acc:  17.30; ppl: 114.55; xent: 4.74; lr: 0.00250; 14236/3033 tok/s;   2691 sec
+[2019-04-02 15:42:41,337 INFO] Step 1300/10000; acc:  17.44; ppl: 125.55; xent: 4.83; lr: 0.00245; 14614/5034 tok/s;   2797 sec
+[2019-04-02 15:42:59,276 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:44:31,425 INFO] Step 1350/10000; acc:  16.59; ppl: 123.51; xent: 4.82; lr: 0.00241; 14510/5035 tok/s;   2907 sec
+[2019-04-02 15:46:17,823 INFO] Step 1400/10000; acc:  15.28; ppl: 133.32; xent: 4.89; lr: 0.00236; 13873/4095 tok/s;   3014 sec
+[2019-04-02 15:47:42,453 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:48:08,846 INFO] Step 1450/10000; acc:  16.68; ppl: 136.92; xent: 4.92; lr: 0.00232; 14021/5353 tok/s;   3125 sec
+[2019-04-02 15:49:54,283 INFO] Step 1500/10000; acc:  14.76; ppl: 131.00; xent: 4.88; lr: 0.00228; 14019/4065 tok/s;   3230 sec
+[2019-04-02 15:51:40,526 INFO] Step 1550/10000; acc:  16.23; ppl: 131.96; xent: 4.88; lr: 0.00225; 12234/7475 tok/s;   3336 sec
+[2019-04-02 15:52:24,392 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:53:30,827 INFO] Step 1600/10000; acc:  12.50; ppl: 148.78; xent: 5.00; lr: 0.00221; 13085/5334 tok/s;   3447 sec
+[2019-04-02 15:53:31,060 INFO] Loading valid dataset from data/demo.valid.1.pt, number of examples: 10725
+[2019-04-02 15:53:53,364 INFO] Validation perplexity: 273.464
+[2019-04-02 15:53:53,366 INFO] Validation accuracy: 16.2813
+[2019-04-02 15:55:39,640 INFO] Step 1650/10000; acc:  17.38; ppl: 112.41; xent: 4.72; lr: 0.00218; 14403/4784 tok/s;   3575 sec
+[2019-04-02 15:57:27,213 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 15:57:30,245 INFO] Step 1700/10000; acc:  15.93; ppl: 120.93; xent: 4.80; lr: 0.00214; 5171/1705 tok/s;   3686 sec
+[2019-04-02 15:59:15,743 INFO] Step 1750/10000; acc:  17.38; ppl: 125.79; xent: 4.83; lr: 0.00211; 14012/4892 tok/s;   3791 sec
+[2019-04-02 16:01:01,844 INFO] Step 1800/10000; acc:  14.91; ppl: 148.00; xent: 5.00; lr: 0.00208; 13802/6876 tok/s;   3898 sec
+[2019-04-02 16:02:10,026 INFO] Loading train dataset from data/demo.train.1.pt, number of examples: 86098
+[2019-04-02 16:02:53,345 INFO] Step 1850/10000; acc:  15.05; ppl: 131.67; xent: 4.88; lr: 0.00205; 12989/4141 tok/s;   4009 sec
+[2019-04-02 16:04:39,723 INFO] Step 1900/10000; acc:  18.39; ppl: 103.86; xent: 4.64; lr: 0.00203; 17227/4108 tok/s;   4115 sec

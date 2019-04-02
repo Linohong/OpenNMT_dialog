@@ -1,0 +1,4 @@
+six
+tqdm
+git+https://github.com/pytorch/text
+future

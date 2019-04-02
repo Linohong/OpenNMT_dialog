@@ -1,0 +1,14 @@
+#!/bin/sh
+# the first argument must be the name of the experiment
+# the second argument must be the number of pretrained steps to start 
+# [optional] if exists, train without transferred version
+
+mkdir log/$1
+
+if [ $# -lt 3 ]
+then
+    nohup python translate.py -model  $1/demo-model_step_$2.pt -src data/src-test.txt -output log/$1/$2.txt -replace_unk -verbose > log/$1/$2.nohup &
+else
+    nohup python translate.py -model transformer_model_step_$2.pt -src data/src-test.txt -output log/$1/baseline_$2.txt -replace_unk -verbose > log/$1/baseline_$2.nohup & 
+fi
+

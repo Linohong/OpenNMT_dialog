@@ -1,0 +1,14 @@
+#!/bin/sh
+# the first argument must be the name of the experiment
+# the second argument must be the cuda number 
+# the third argument must be the number of pretrained steps to start
+# fourth argument for train_steps
+
+mkdir $1 
+
+if [ $# -lt 3 ]
+    then 
+        nohup python train.py -data data/demo -save_model $1/demo-model -gpuid $2 -tensorboard -tensorboard_log_dir $1 < available_models/transformer.conf.txt > $1/nohup.out &
+else
+        nohup python train.py -data data/demo -save_model $1/demo-model -gpuid $2 -train_from $3 -train_steps $4 > $1/nohup.out &
+fi
